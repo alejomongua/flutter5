@@ -1,9 +1,10 @@
+import 'package:design3/widgets/navigation_widget.dart';
 import 'package:design3/widgets/titles_widget.dart';
 import 'package:flutter/material.dart';
 
 class MainNav extends StatelessWidget {
   const MainNav({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -12,6 +13,7 @@ class MainNav extends StatelessWidget {
       child: Column(
         children: [
           TitleWidget(),
+          Navigation(),
         ],
       ),
     );
