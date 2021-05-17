@@ -19,10 +19,21 @@ class NavigationItem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
-              backgroundColor: color,
+            Container(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Colors.white,
+                    color,
+                  ],
+                ),
+              ),
               child: Icon(icon, size: 35, color: Colors.white),
-              radius: 30,
+              height: 60,
+              width: 60,
             ),
             SizedBox(height: 30),
             Text(
